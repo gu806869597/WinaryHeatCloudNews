@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云易供热云平台新闻发布系统</title>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js" ></script>
+    <script type="text/javascript" src="js/main.js" rel="script" ></script>
+    <script type="text/javascript" src="js/pekeUpload.js"></script>
+</head>
+<body>
+<header>
+    <a href="main.html">云易供热云平台新闻发布系统</a>
+</header>
+<section>
+    <aside>
+        <ul>
+            <li>新闻中心</li>
+            <li>公告中心</li>
+        </ul>
+    </aside>
+
+    <article>
+        <div class="news_center_layout">
+            <div>
+                <p>输入新闻标题：</p>
+                <input type="text" placeholder="限制输入16个中英文汉字或字母" maxlength="16" class="title" id="title" required="required">
+                <p>输入新闻内容：</p>
+                <textarea placeholder="新闻内容" class="content" id="content" required="required"></textarea>
+                <p>是否为重要信息：</p>
+                <input type="radio" name="IsImportant" value="Yes" class="checkbox">重要信息
+                <input type="radio" name="IsImportant" value="No" class="checkbox2" checked>非重要信息<br/>
+                <input type="file" value="点击上传图片..." class="submit_pic" id="submit_pic"></input>
+
+                <input type="submit" class="news_submit_btn" id="news_submit_btn" value="提交新闻信息"></input>
+
+            </div>
+
+        </div>
+
+    </article>
+</section>
+</body>
+</html>

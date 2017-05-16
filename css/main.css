@@ -1,0 +1,154 @@
+*{
+    margin:0 ;
+    padding: 0 ;
+}
+
+body {
+    font-size: 13px;
+    color: #07111b;
+    font-family: "微软雅黑";
+
+}
+
+header{
+    width:100%;
+    height:65px;
+    background: #03a9f3;
+    box-shadow: 0px 0px 5px #757575;
+    z-index: 3;
+}
+
+header>a{
+    background: url("../img/simple_logo.png") left center no-repeat;
+    text-indent: 60px ;
+    background-size: 50px 50px;
+    font-weight:normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 65px;
+    position: absolute;
+    margin-left: 30px;
+    color: #fff;
+    font-size:17px;
+}
+
+section{
+    width:100%;
+    height:735px;
+    z-index: 2;
+}
+
+section>aside{
+    width:20%;
+    height:100%;
+    float: left;
+}
+
+section>article{
+    float:right;
+    width:80%;
+    height:100%;
+    overflow: hidden;
+}
+
+section>aside>ul{
+    width:100%;
+    height:100%;
+    list-style: none;
+    border-right: 1px solid #ededed;
+}
+
+section>aside>ul>li{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    border: 1px solid #ededed;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    text-indent: 30px ;
+}
+
+section>aside>ul>li:hover{
+    background: #cccccc;
+}
+
+.news_center_layout{
+    display: block;
+    position: relative;
+}
+
+.news_center_layout>div{
+    position: absolute;
+    left:40px;
+    top:30px;
+    width:100%;
+}
+.news_center_layout>div>p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.title{
+    width:90%;
+    height:40px;
+    border-bottom: 2px solid #bdbdbd;
+    margin-bottom: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #0000;
+    outline:none;
+    font-size:14px;
+}
+
+.title:focus{
+    border-bottom: 2px solid #03a9f3;
+}
+
+.content{
+    width:90%;
+    height:80px;
+    border: 2px solid #bdbdbd;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background: #0000;
+    outline:none;
+    font-size:12px;
+}
+
+.content:focus{
+    border: 2px solid #03a9f3;
+}
+
+.checkbox{
+    margin-top: 10px;
+}
+.checkbox2{
+    margin-left: 30px;
+}
+
+.submit_pic{
+    margin-top: 10px;
+    display: block;
+}
+
+.news_submit_btn{
+    width:90%;
+    height:55px;
+    background: #03a9f3;
+    border-radius: 5px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    cursor: pointer;
+    border:none;
+    font-size:15px;
+}
+
+
+.news_submit_btn:hover{
+    box-shadow: 0 0 7px #757575;
+}

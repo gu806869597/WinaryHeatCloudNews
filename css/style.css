@@ -1,0 +1,84 @@
+*{
+    margin:0 ;
+    padding: 0 ;
+}
+
+body {
+    font-size: 13px;
+    font-family: "微软雅黑";
+    background: url("../img/bg.png") no-repeat center;
+
+}
+section{
+    width:100%;
+    height:100%;
+    position: relative;
+
+}
+section>article{
+    top:120px;
+    position: absolute;
+    text-align: center;
+    width:100%;
+}
+
+section>article>p{
+    font-weight:bold;
+    font-size:36px;
+}
+
+section>form{
+    width:40%;
+    height:400px;
+    top:180px;
+    left:50%;
+    margin-left: -20%;
+    position: absolute;
+}
+
+.hintAccount{
+    margin-top: 30px;
+    font-size:15px;
+    margin-bottom: 15px;
+}
+
+.hintPassword{
+    margin:15px 0;
+    font-size:15px;
+}
+
+.editAccount{
+    width:100%;
+    height:55px;
+    font-size:17px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 0px ;
+}
+
+.editPassword{
+    width:100%;
+    height:55px;
+    font-size: 17px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 0px ;
+}
+
+.loginButton{
+    width:80%;
+    height:55px;
+    margin:0 auto;
+    background: #03a9f3;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginButton:hover{
+    box-shadow: 0 0 7px #757575;
+}
