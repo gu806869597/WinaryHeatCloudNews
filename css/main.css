@@ -32,6 +32,24 @@ header>a{
     font-size:17px;
 }
 
+header>div{
+    position: absolute;
+    color: #fff;
+    width:90px;
+    height: 45px;
+    background: #f01414;
+    right:10px;
+    border-radius: 3px;
+    top:10px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+header>div:hover{
+    box-shadow: 0px 0px 5px #757575;
+}
 section{
     width:100%;
     height:735px;
@@ -73,21 +91,54 @@ section>aside>ul>li:hover{
     background: #cccccc;
 }
 
-.news_center_layout{
+.default_layout{
+    width:100%;
+    height:735px;
     display: block;
+    position: relative;
+    line-height: 580px;
+    text-align: center;
+    letter-spacing: 4px;
+    animation: defaultTextAnimate 3s infinite ease-in-out;
+    font-size:40px;
+}
+
+@keyframes defaultTextAnimate {
+    0%{
+        color: #fff;
+        opacity: 0;
+    }
+    50%{
+        color: #bdbdbd;
+        opacity:1 ;
+    }
+    100%{
+        color: #fff;
+        opacity:0;
+    }
+}
+.news_center_layout{
+    display: none;
     position: relative;
 }
 
-.news_center_layout>div{
+.broadcast_layout{
+    display: none;
+    position: relative;
+}
+
+.news_center_layout>div,.broadcast_layout>div{
     position: absolute;
     left:40px;
     top:30px;
     width:100%;
 }
-.news_center_layout>div>p{
+
+.news_center_layout>div>p ,.broadcast_layout>div>p{
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 
 
 .title{

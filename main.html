@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <title>云易供热云平台新闻发布系统</title>
@@ -12,33 +12,47 @@
 <body>
 <header>
     <a href="main.html">云易供热云平台新闻发布系统</a>
+
+    <div id="exit">安全退出</div>
 </header>
 <section>
     <aside>
-        <ul>
+        <ul id="main_function_list">
             <li>新闻中心</li>
             <li>公告中心</li>
         </ul>
     </aside>
 
     <article>
-        <div class="news_center_layout">
+        <div class="default_layout">请选择左侧您需要的功能</div>
+        <div class="news_center_layout" id="news_center_layout">
             <div>
                 <p>输入新闻标题：</p>
-                <input type="text" placeholder="限制输入16个中英文汉字或字母" maxlength="16" class="title" id="title" required="required">
+                <input type="text" placeholder="限制输入16个中英文汉字或字母" maxlength="16" class="title" id="news_title" required="required">
                 <p>输入新闻内容：</p>
-                <textarea placeholder="新闻内容" class="content" id="content" required="required"></textarea>
+                <textarea placeholder="新闻内容" class="content" id="news_content" required="required"></textarea>
                 <p>是否为重要信息：</p>
                 <input type="radio" name="IsImportant" value="Yes" class="checkbox">重要信息
                 <input type="radio" name="IsImportant" value="No" class="checkbox2" checked>非重要信息<br/>
-                <input type="file" value="点击上传图片..." class="submit_pic" id="submit_pic"></input>
+                <input type="file" value="点击上传图片..." class="submit_pic" id="submit_news_pic"></input>
 
                 <input type="submit" class="news_submit_btn" id="news_submit_btn" value="提交新闻信息"></input>
-
             </div>
-
         </div>
 
+        <div class="broadcast_layout" id="broadcast_layout">
+            <div>
+                <p>输入公告标题：</p>
+                <input type="text" placeholder="限制输入16个中英文汉字或字母" maxlength="16" class="title" id="broadcast_title" required="required">
+                <p>输入公告内容：</p>
+                <textarea placeholder="公告内容" class="content" id="broadcast_content" required="required"></textarea>
+                <p>是否为重要公告信息：</p>
+                <input type="radio" name="IsImportant" value="Yes" class="checkbox">重要信息
+                <input type="radio" name="IsImportant" value="No" class="checkbox2" checked>非重要信息<br/>
+                <input type="file" value="点击上传图片..." class="submit_pic" id="submit_broadcast_pic"></input>
+                <input type="submit" class="news_submit_btn" id="broadcast_submit_btn" value="提交公告信息">
+            </div>
+        </div>
     </article>
 </section>
 </body>
